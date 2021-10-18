@@ -10,7 +10,7 @@ async function showData() {
     link: nom.value,
   }
 
-  let res = await axios.post('http://localhost:8000/api/readSheet', params);
+  let res = await axios.post('http://getsheet.p2m.ma/public/api/readSheet', params);
 
   console.log(res.data);
 }
